@@ -67,6 +67,7 @@ const MARKET_CACHE_KEY = "skillHubMarketCache";
 const MARKET_CACHE_TTL_MS = 30 * 60 * 1000;
 const MARKET_PAGE_SIZE = 60;
 const MARKET_SOURCE_TIMEOUT_MS = 120000;
+const MARKET_CACHE_VERSION = 2; // Bump to invalidate stale caches from pre-RouteC builds.
 
 interface MarketCache {
   cachedAt: number;
@@ -122,7 +123,7 @@ function App({
   const [marketVisibleCount, setMarketVisibleCount] = useState(MARKET_PAGE_SIZE);
   const [resourceViewMode, setResourceViewMode] = useState<ResourceViewMode>("list");
   const [installingUrl, setInstallingUrl] = useState<string | null>(null);
-  const [marketSort, setMarketSort] = useState<"stars" | "name">("stars");
+  const [marketSort, setMarketSort] = useState<"stars" | "name" | "hotness">("hotness");
   const [marketKind, setMarketKind] = useState<MarketKindFilter>("plugin");
   const [newMarketSource, setNewMarketSource] = useState("");
   const [showMarketSourceEntry, setShowMarketSourceEntry] = useState(false);
@@ -184,18 +185,21 @@ function App({
     const sourceSignature = marketSourceSignature(settings);
     if (marketPrefetchKeyRef.current === sourceSignature) return;
 
+    // Always load L1 built-in index + L2/L3 in background, even if stale
+    // cache exists — the cache is just for instant initial display while fresh
+    // data loads underneath.
     const cached = readMarketCache(settings);
     if (cached) {
       marketPrefetchKeyRef.current = sourceSignature;
       setMarket(cached.entries);
       setMarketCachedAt(cached.cachedAt);
-      return;
+      // Don't return here — still kick off background refresh for L1 + L2.
     }
 
     marketPrefetchKeyRef.current = sourceSignature;
     const timer = window.setTimeout(() => {
       void refreshMarket({ background: true });
-    }, 1200);
+    }, 200);
 
     return () => window.clearTimeout(timer);
   }, [initialMarket, initialResources, marketLoading, resources.length, settings.githubToken, settings.marketSources]);
@@ -401,14 +405,14 @@ function App({
 
   async function refreshMarket({ force = false, background = false }: { force?: boolean; background?: boolean } = {}) {
     if (initialMarket) return;
-    if (!force) {
+    // In background mode we ALWAYS load L1+L2+L3 — cache is only a fast first-paint
+    // optimisation for manual/foreground refreshes.
+    if (!force && !background) {
       const cached = readMarketCache(settings);
       if (cached) {
         setMarket(cached.entries);
         setMarketCachedAt(cached.cachedAt);
-        if (!background) {
-          setNotice(`${text.marketLoadedFromCache} ${formatCachedAt(cached.cachedAt)}`);
-        }
+        setNotice(`${text.marketLoadedFromCache} ${formatCachedAt(cached.cachedAt)}`);
         return;
       }
     }
@@ -1996,11 +2000,12 @@ function readMarketCache(settings: AppSettings) {
   try {
     const raw = window.localStorage?.getItem(MARKET_CACHE_KEY);
     if (!raw) return null;
-    const parsed = JSON.parse(raw) as Partial<MarketCache>;
+    const parsed = JSON.parse(raw) as Partial<MarketCache & { version?: number }>;
     if (
       typeof parsed.cachedAt !== "number" ||
       parsed.sourceSignature !== marketSourceSignature(settings) ||
-      !Array.isArray(parsed.entries)
+      !Array.isArray(parsed.entries) ||
+      (parsed.version ?? 1) < MARKET_CACHE_VERSION
     ) {
       return null;
     }
@@ -2018,10 +2023,11 @@ function readMarketCache(settings: AppSettings) {
 
 function writeMarketCache(settings: AppSettings, entries: MarketEntry[], cachedAt = Date.now()) {
   try {
-    const cache: MarketCache = {
+    const cache: MarketCache & { version: number } = {
       cachedAt,
       entries,
       sourceSignature: marketSourceSignature(settings),
+      version: MARKET_CACHE_VERSION,
     };
     window.localStorage?.setItem(MARKET_CACHE_KEY, JSON.stringify(cache));
   } catch {

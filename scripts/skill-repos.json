@@ -10,6 +10,11 @@
     "skillPath": "skills"
   },
   {
+    "repo": "Xquik-dev/x-twitter-scraper",
+    "branch": "master",
+    "skillPath": "skills"
+  },
+  {
     "repo": "anthropics/claude-plugins-official",
     "branch": "main",
     "skillPath": "."

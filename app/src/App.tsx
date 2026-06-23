@@ -177,6 +177,9 @@ function App({
   }, [initialResources, settings.extraSkillPaths]);
 
   useEffect(() => {
+    if (typeof window.matchMedia !== "function") {
+      return;
+    }
     const media = window.matchMedia("(prefers-color-scheme: dark)");
     const applyTheme = () => setSystemTheme(media.matches ? "dark" : "light");
 

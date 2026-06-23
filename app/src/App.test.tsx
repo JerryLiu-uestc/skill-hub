@@ -301,13 +301,13 @@ describe("App", () => {
     render(<App initialResources={inventory} initialMarket={market} />);
 
     fireEvent.click(screen.getByRole("button", { name: "Market" }));
-    expect(screen.queryByRole("heading", { name: "ppt-master" })).not.toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "github-plugin" })).toBeInTheDocument();
-
-    fireEvent.click(screen.getByRole("tab", { name: "Skill" }));
-
     expect(screen.getByRole("heading", { name: "ppt-master" })).toBeInTheDocument();
     expect(screen.queryByRole("heading", { name: "github-plugin" })).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("tab", { name: "Plugin" }));
+
+    expect(screen.queryByRole("heading", { name: "ppt-master" })).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "github-plugin" })).toBeInTheDocument();
   });
 
   it("uses top tabs to switch the market directory between plugins and skills", () => {
@@ -319,12 +319,12 @@ describe("App", () => {
 
     fireEvent.click(screen.getByRole("button", { name: "Market" }));
 
-    expect(screen.getByRole("tab", { name: "Plugin" })).toHaveAttribute("aria-selected", "true");
-    expect(screen.getByRole("heading", { name: "github-plugin" })).toBeInTheDocument();
-
-    fireEvent.click(screen.getByRole("tab", { name: "Skill" }));
     expect(screen.getByRole("tab", { name: "Skill" })).toHaveAttribute("aria-selected", "true");
     expect(screen.getByRole("heading", { name: "ppt-master" })).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("tab", { name: "Plugin" }));
+    expect(screen.getByRole("tab", { name: "Plugin" })).toHaveAttribute("aria-selected", "true");
+    expect(screen.getByRole("heading", { name: "github-plugin" })).toBeInTheDocument();
   });
 
   it("checks for updates on a GitHub skill and surfaces the result", async () => {

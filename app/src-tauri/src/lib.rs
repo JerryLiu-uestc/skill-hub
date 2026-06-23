@@ -211,14 +211,9 @@ fn parse_iso8601(timestamp: &str) -> HubResult<std::time::SystemTime> {
     // We only need the date portion for a rough TTL check.
     let parts: Vec<&str> = timestamp.split('T').collect();
     if parts.len() < 2 {
-        return Err(SkillHubError::Io(format!(
-            "Invalid timestamp: {timestamp}"
-        )));
+        return Err(SkillHubError::Io(format!("Invalid timestamp: {timestamp}")));
     }
-    let date_parts: Vec<u64> = parts[0]
-        .split('-')
-        .filter_map(|s| s.parse().ok())
-        .collect();
+    let date_parts: Vec<u64> = parts[0].split('-').filter_map(|s| s.parse().ok()).collect();
     if date_parts.len() != 3 {
         return Err(SkillHubError::Io(format!(
             "Invalid date in timestamp: {timestamp}"
@@ -514,7 +509,8 @@ async fn discover_market_source(
     resources: Vec<SkillResource>,
 ) -> Result<MarketResult, String> {
     tauri::async_runtime::spawn_blocking(move || {
-        let (entries, warnings) = browse_market_v2(&[source], token.as_deref(), false, &resources, None, None);
+        let (entries, warnings) =
+            browse_market_v2(&[source], token.as_deref(), false, &resources, None, None);
         Ok(MarketResult { entries, warnings })
     })
     .await
@@ -548,7 +544,8 @@ async fn refresh_remote_index(
     resources: Vec<SkillResource>,
 ) -> Result<MarketResult, String> {
     tauri::async_runtime::spawn_blocking(move || {
-        let default_url = "https://raw.githubusercontent.com/JerryLiu-uestc/skill-hub/gh-pages/index.json";
+        let default_url =
+            "https://raw.githubusercontent.com/JerryLiu-uestc/skill-hub/gh-pages/index.json";
         let url = url.as_deref().unwrap_or(default_url);
         let cache_dir = app_handle
             .path()
@@ -3297,7 +3294,9 @@ mod tests {
         assert_eq!(entries.len(), 17);
         assert!(warnings.is_empty());
         assert!(entries.iter().all(|entry| entry.origin == "index"));
-        assert!(entries.iter().all(|entry| entry.kind == ResourceKind::Skill));
+        assert!(entries
+            .iter()
+            .all(|entry| entry.kind == ResourceKind::Skill));
         assert!(entries.iter().any(|entry| entry.name == "pdf"));
     }
 
@@ -3308,7 +3307,10 @@ mod tests {
         let result = discover_builtin_index(vec![]).expect("builtin index should load");
         assert_eq!(result.entries.len(), 17);
         assert!(result.warnings.is_empty());
-        assert!(result.entries.iter().all(|entry| entry.kind == ResourceKind::Skill));
+        assert!(result
+            .entries
+            .iter()
+            .all(|entry| entry.kind == ResourceKind::Skill));
         assert!(result.entries.iter().all(|entry| !entry.installed));
         assert!(result.entries.iter().all(|entry| entry.origin == "index"));
         // Hotness and stars should be populated from the index file.

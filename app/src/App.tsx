@@ -1,6 +1,6 @@
 import { type CSSProperties, type ReactElement, memo, useEffect, useMemo, useRef, useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
-import { Blocks, BookOpenCheck, Grid2X2, LayoutDashboard, List, Plus, Settings, ShoppingBag, SlidersHorizontal } from "lucide-react";
+import { Blocks, BookOpenCheck, Grid2X2, LayoutDashboard, List, Plus, SearchX, Settings, ShoppingBag, SlidersHorizontal } from "lucide-react";
 import { LimelightNav, type LimelightNavItem } from "@/components/ui/limelight-nav";
 import { filterInventory } from "./inventory";
 import type {
@@ -22,6 +22,13 @@ type ResourceViewMode = "list" | "grid";
 type MarketKindFilter = "skill" | "plugin";
 type AppUpdateStatus = "idle" | "checking" | "available" | "downloading" | "installing" | "error";
 type SourceStatus = "loading" | "success" | "error";
+type ToastType = "info" | "success" | "error";
+
+interface Toast {
+  id: number;
+  message: string;
+  type: ToastType;
+}
 
 interface SourceState {
   label: string;
@@ -137,7 +144,23 @@ function App({
     progress: 0,
     error: null,
   });
-  const [notice, setNotice] = useState(initialResources ? "Fixture inventory loaded." : "Scanning local skill roots...");
+  const [toasts, setToasts] = useState<Toast[]>([]);
+  const toastIdRef = useRef(0);
+
+  function addToast(message: string, type: ToastType = "info") {
+    const id = ++toastIdRef.current;
+    setToasts((prev) => {
+      const next = [...prev, { id, message, type }];
+      return next.length > 5 ? next.slice(-5) : next;
+    });
+    window.setTimeout(() => {
+      setToasts((prev) => prev.filter((t) => t.id !== id));
+    }, 5000);
+  }
+
+  function dismissToast(id: number) {
+    setToasts((prev) => prev.filter((t) => t.id !== id));
+  }
   const [showUpdateDialog, setShowUpdateDialog] = useState(false);
   const updateDialogShownRef = useRef(false);
   const marketPrefetchKeyRef = useRef<string | null>(cachedMarket ? marketSourceSignature(settings) : null);
@@ -162,7 +185,6 @@ function App({
   useEffect(() => {
     document.documentElement.dataset.theme = settings.theme;
     saveSettings(settings);
-    setNotice((current) => translateKnownNotice(current, settings.language));
   }, [settings]);
 
   useEffect(() => {
@@ -282,11 +304,11 @@ function App({
       const matched = await enrichWithGithubMatches(scanned);
       setResources(matched);
       setSelectedId(matched[0]?.id ?? null);
-      setNotice(matched.length ? labels[settings.language].inventoryRefreshed : labels[settings.language].noRoots);
+      addToast(matched.length ? labels[settings.language].inventoryRefreshed : labels[settings.language].noRoots);
     } catch (error) {
       setResources([]);
       setSelectedId(null);
-      setNotice(String(error));
+      addToast(String(error), "error");
     }
   }
 
@@ -307,17 +329,17 @@ function App({
     setResources((current) => current.filter((resource) => resource.id !== selected.id));
     setSelectedId(null);
     setPendingDelete(false);
-    setNotice(`${selected.name} ${text.movedToTrash}`);
+    addToast(`${selected.name} ${text.movedToTrash}`, "success");
   }
 
   function addExtraSkillPath() {
     const path = newSkillPath.trim();
     if (!path) {
-      setNotice(text.skillPathRequired);
+      addToast(text.skillPathRequired);
       return;
     }
     if (settings.extraSkillPaths.includes(path)) {
-      setNotice(text.skillPathExists);
+      addToast(text.skillPathExists);
       return;
     }
     setSettings((current) => ({
@@ -325,7 +347,7 @@ function App({
       extraSkillPaths: [...current.extraSkillPaths, path],
     }));
     setNewSkillPath("");
-    setNotice(text.skillPathAdded);
+    addToast(text.skillPathAdded, "success");
   }
 
   function removeExtraSkillPath(path: string) {
@@ -333,14 +355,14 @@ function App({
       ...current,
       extraSkillPaths: current.extraSkillPaths.filter((item) => item !== path),
     }));
-    setNotice(text.skillPathRemoved);
+    addToast(text.skillPathRemoved, "success");
   }
 
   async function enrichWithGithubMatches(scanned: SkillResource[]) {
     if (!settings.githubMatchingEnabled || settings.githubIndexUrls.length === 0 || scanned.length === 0) {
       return scanned;
     }
-    setNotice(text.githubMatching);
+    addToast(text.githubMatching);
     const matches = await invoke<GitHubSourceMatch[]>("match_github_sources", {
       indexUrls: settings.githubIndexUrls,
       resources: scanned,
@@ -351,15 +373,15 @@ function App({
   function addGithubIndexUrl() {
     const url = newIndexUrl.trim();
     if (!url) {
-      setNotice(text.githubIndexRequired);
+      addToast(text.githubIndexRequired);
       return;
     }
     if (!url.startsWith("https://")) {
-      setNotice(text.githubIndexHttpsRequired);
+      addToast(text.githubIndexHttpsRequired);
       return;
     }
     if (settings.githubIndexUrls.includes(url)) {
-      setNotice(text.githubIndexExists);
+      addToast(text.githubIndexExists);
       return;
     }
     setSettings((current) => ({
@@ -367,7 +389,7 @@ function App({
       githubIndexUrls: [...current.githubIndexUrls, url],
     }));
     setNewIndexUrl("");
-    setNotice(text.githubIndexAdded);
+    addToast(text.githubIndexAdded, "success");
   }
 
   function removeGithubIndexUrl(url: string) {
@@ -375,7 +397,7 @@ function App({
       ...current,
       githubIndexUrls: current.githubIndexUrls.filter((item) => item !== url),
     }));
-    setNotice(text.githubIndexRemoved);
+    addToast(text.githubIndexRemoved, "success");
   }
 
   function removeMarketSource(url: string) {
@@ -383,21 +405,21 @@ function App({
       ...current,
       marketSources: current.marketSources.filter((item) => item !== url),
     }));
-    setNotice(text.marketSourceRemoved);
+    addToast(text.marketSourceRemoved, "success");
   }
 
   function addMarketSource() {
     const url = newMarketSource.trim();
     if (!url) {
-      setNotice(text.marketSourceRequired);
+      addToast(text.marketSourceRequired);
       return;
     }
     if (!url.toLowerCase().startsWith("https://github.com/") && !url.toLowerCase().startsWith("git@github.com:")) {
-      setNotice(text.marketSourceInvalid);
+      addToast(text.marketSourceInvalid);
       return;
     }
     if (settings.marketSources.includes(url)) {
-      setNotice(text.marketSourceExists);
+      addToast(text.marketSourceExists);
       return;
     }
     setSettings((current) => ({
@@ -407,7 +429,7 @@ function App({
     setNewMarketSource("");
     setShowMarketSourceEntry(false);
     setMarketCachedAt(null);
-    setNotice(text.marketSourceAdded);
+    addToast(text.marketSourceAdded, "success");
   }
 
   async function refreshMarket({ force = false, background = false }: { force?: boolean; background?: boolean } = {}) {
@@ -419,14 +441,14 @@ function App({
       if (cached) {
         setMarket(cached.entries);
         setMarketCachedAt(cached.cachedAt);
-        setNotice(`${text.marketLoadedFromCache} ${formatCachedAt(cached.cachedAt)}`);
+        addToast(`${text.marketLoadedFromCache} ${formatCachedAt(cached.cachedAt)}`);
         return;
       }
     }
     setMarketLoading(true);
     setSourceStates({});
     if (!background) {
-      setNotice(text.marketLoading);
+      addToast(text.marketLoading);
     }
 
     const token = settings.githubToken || null;
@@ -548,13 +570,13 @@ function App({
     setMarketLoading(false);
     if (!background) {
       if (failedCount > 0 && nextMarket.length > 0) {
-        setNotice(`${text.marketLoaded} ${text.marketSomeSourcesFailed}: ${failedCount}`);
+        addToast(`${text.marketLoaded} ${text.marketSomeSourcesFailed}: ${failedCount}`);
       } else if (failedCount > 0) {
-        setNotice(text.marketAllSourcesFailed);
+        addToast(text.marketAllSourcesFailed);
       } else if (nextMarket.length > 0) {
-        setNotice(text.marketLoaded);
+        addToast(text.marketLoaded);
       } else {
-        setNotice(text.marketEmpty);
+        addToast(text.marketEmpty);
       }
     }
   }
@@ -562,15 +584,15 @@ function App({
   async function discoverFromMarketQuery() {
     const url = marketQuery.trim();
     if (!url) {
-      setNotice(text.pasteUrlRequired);
+      addToast(text.pasteUrlRequired);
       return;
     }
     if (!url.toLowerCase().startsWith("https://github.com/") && !url.toLowerCase().startsWith("git@github.com:")) {
-      setNotice(text.pasteUrlInvalid);
+      addToast(text.pasteUrlInvalid);
       return;
     }
     setDiscovering(true);
-    setNotice(text.discovering);
+    addToast(text.discovering);
     try {
       let found: MarketEntry[];
       if (onDiscoverRepo) {
@@ -582,14 +604,14 @@ function App({
           resources,
         });
         if (result.warnings.length > 0 && result.entries.length === 0) {
-          setNotice(result.warnings[0]);
+          addToast(result.warnings[0]);
           setDiscovering(false);
           return;
         }
         found = result.entries;
       }
       if (found.length === 0) {
-        setNotice(text.discoverNone);
+        addToast(text.discoverNone);
         setDiscovering(false);
         return;
       }
@@ -605,9 +627,9 @@ function App({
         setMarketKind(found[0].kind);
       }
       setMarketQuery("");
-      setNotice(`${text.discoverFound}: ${found.length}`);
+      addToast(`${text.discoverFound}: ${found.length}`);
     } catch (error) {
-      setNotice(String(error));
+      addToast(String(error), "error");
     } finally {
       setDiscovering(false);
     }
@@ -615,7 +637,7 @@ function App({
 
   async function installFromMarket(entry: MarketEntry) {
     setInstallingUrl(entry.sourceUrl);
-    setNotice(`${entry.name} ${text.marketInstalling}`);
+    addToast(`${entry.name} ${text.marketInstalling}`);
     try {
       if (onInstallMarket) {
         await onInstallMarket(entry, marketHost);
@@ -636,12 +658,12 @@ function App({
         writeMarketCache(settings, next);
         return next;
       });
-      setNotice(`${entry.name} ${text.installed}`);
+      addToast(`${entry.name} ${text.installed}`, "success");
       if (!initialResources) {
         refreshInventory();
       }
     } catch (error) {
-      setNotice(String(error));
+      addToast(String(error), "error");
     } finally {
       setInstallingUrl(null);
     }
@@ -651,7 +673,7 @@ function App({
     if (!selected || selected.sourceKind !== "github" || !selected.sourceUrl) return;
     setUpdateChecking(true);
     setUpdateCheck(null);
-    setNotice(text.updateChecking);
+    addToast(text.updateChecking);
     try {
       const result = onCheckUpdate
         ? await onCheckUpdate(selected)
@@ -660,9 +682,9 @@ function App({
             path: selected.path,
           });
       setUpdateCheck(result);
-      setNotice(updateNoticeFor(result.status, text));
+      addToast(updateNoticeFor(result.status, text));
     } catch (error) {
-      setNotice(String(error));
+      addToast(String(error), "error");
     } finally {
       setUpdateChecking(false);
     }
@@ -674,7 +696,7 @@ function App({
       setPendingUpdate(true);
       return;
     }
-    setNotice(`${selected.name} ${text.updating}`);
+    addToast(`${selected.name} ${text.updating}`);
     try {
       if (onUpdateResource) {
         await onUpdateResource(selected);
@@ -688,14 +710,14 @@ function App({
           path: selected.path,
         });
       }
-      setNotice(`${selected.name} ${text.updated}`);
+      addToast(`${selected.name} ${text.updated}`, "success");
       setPendingUpdate(false);
       setUpdateCheck(null);
       if (!initialResources) {
         refreshInventory();
       }
     } catch (error) {
-      setNotice(String(error));
+      addToast(String(error), "error");
       setPendingUpdate(false);
     }
   }
@@ -704,7 +726,7 @@ function App({
     if (!isTauriRuntime()) return null;
     if (!background) {
       setAppUpdate((current) => ({ ...current, status: "checking", error: null }));
-      setNotice(text.appUpdate.checking);
+      addToast(text.appUpdate.checking);
     }
     try {
       const { check } = await import("@tauri-apps/plugin-updater");
@@ -713,7 +735,7 @@ function App({
       if (!update) {
         setAppUpdate({ status: "idle", version: null, progress: 0, error: null });
         if (!background) {
-          setNotice(text.appUpdate.upToDate);
+          addToast(text.appUpdate.upToDate);
         }
         return null;
       }
@@ -728,7 +750,7 @@ function App({
         setShowUpdateDialog(true);
       }
       if (!background) {
-        setNotice(`${text.appUpdate.available}: ${update.version}`);
+        addToast(`${text.appUpdate.available}: ${update.version}`);
       }
       return update;
     } catch (error) {
@@ -739,7 +761,7 @@ function App({
         error: message,
       }));
       if (!background) {
-        setNotice(message);
+        addToast(message, "error");
       }
       return null;
     }
@@ -753,7 +775,7 @@ function App({
       progress: 0,
       error: null,
     }));
-    setNotice(text.appUpdate.downloading);
+    addToast(text.appUpdate.downloading);
     try {
       // Always re-check to get the latest endpoint data
       appUpdateRef.current = null;
@@ -780,7 +802,7 @@ function App({
         }
       });
 
-      setNotice(text.appUpdate.installing);
+      addToast(text.appUpdate.installing);
       setAppUpdate((current) => ({ ...current, status: "installing", progress: 100 }));
       await update.install();
       const { relaunch } = await import("@tauri-apps/plugin-process");
@@ -792,7 +814,7 @@ function App({
         status: "error",
         error: message,
       }));
-      setNotice(message);
+      addToast(message, "error");
     }
   }
 
@@ -863,7 +885,30 @@ function App({
           </div>
         </header>
 
-        {notice && <div className="notice">{notice}</div>}
+        {toasts.length > 0 && (
+          <div className="toast-stack" role="status" aria-live="polite">
+            {toasts.map((toast) => (
+              <div
+                key={toast.id}
+                className={`toast toast--${toast.type}`}
+                onClick={() => dismissToast(toast.id)}
+                role="alert"
+              >
+                <span className="toast-text">{toast.message}</span>
+                <button
+                  className="toast-close"
+                  aria-label="Dismiss"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    dismissToast(toast.id);
+                  }}
+                >
+                  ×
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
 
         {activeNav === "market" ? (
           <section className="market-panel" aria-label={text.nav.market}>
@@ -997,9 +1042,10 @@ function App({
 
             {visibleMarket.length === 0 && !marketLoading ? (
               <div className="empty-state">
+                <ShoppingBag className="empty-state-icon" size={40} strokeWidth={1.2} />
                 <strong>{text.marketEmpty}</strong>
                 <span>{text.marketEmptyHint}</span>
-                {!marketLoading && !settings.githubToken && <span>{text.marketTokenTip}</span>}
+                {!marketLoading && !settings.githubToken && <span className="empty-state-tip">{text.marketTokenTip}</span>}
               </div>
             ) : visibleMarket.length > 0 ? (
               <div className="market-directory">
@@ -1364,6 +1410,7 @@ function App({
                   </div>
                   {visibleResources.length === 0 && (
                     <div className="empty-state">
+                      <SearchX className="empty-state-icon" size={36} strokeWidth={1.2} />
                       <strong>{text.noMatches}</strong>
                       <span>{text.noMatchesHint}</span>
                     </div>
@@ -1388,6 +1435,7 @@ function App({
                 <div className="resource-card-grid" aria-label={text.gridView}>
                   {visibleResources.length === 0 && (
                     <div className="empty-state">
+                      <SearchX className="empty-state-icon" size={36} strokeWidth={1.2} />
                       <strong>{text.noMatches}</strong>
                       <span>{text.noMatchesHint}</span>
                     </div>
@@ -2116,21 +2164,6 @@ function isFeaturedMarketEntry(entry: MarketEntry) {
 
 function formatCachedAt(cachedAt: number) {
   return new Date(cachedAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-}
-
-function translateKnownNotice(notice: string, language: Language) {
-  const known = new Map<string, keyof Labels>([
-    ["Fixture inventory loaded.", "fixtureLoaded"],
-    ["Scanning local skill roots...", "scanning"],
-    ["Inventory refreshed.", "inventoryRefreshed"],
-    ["No configured host roots were found.", "noRoots"],
-    ["Skill path is required.", "skillPathRequired"],
-    ["Skill path already exists.", "skillPathExists"],
-    ["Skill path added. Inventory will refresh.", "skillPathAdded"],
-    ["Skill path removed. Inventory will refresh.", "skillPathRemoved"],
-  ]);
-  const key = known.get(notice);
-  return key ? String(labels[language][key]) : notice;
 }
 
 const labels: Record<Language, {

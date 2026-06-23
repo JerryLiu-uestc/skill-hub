@@ -36,6 +36,11 @@ export interface MarketEntry {
   repo: string | null;
   stars: number | null;
   origin: "official" | "community" | "index" | string;
+  categories?: string[];
+  hotness?: number;
+  description?: string;
+  updatedAt?: string;
+  indexId?: string;
 }
 
 export interface MarketResult {

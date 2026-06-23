@@ -5,6 +5,7 @@ use std::fmt;
 use std::fs;
 use std::path::{Path, PathBuf};
 use std::time::Duration;
+use tauri::Manager;
 
 #[derive(Clone, Copy, Debug, Deserialize, Eq, PartialEq, Serialize)]
 #[serde(rename_all = "lowercase")]
@@ -116,6 +117,158 @@ struct GitHubIndexEntry {
     skill_sha256: Option<String>,
 }
 
+// --- Route C: Built-in / Remote Index support ---
+
+/// Top-level structure of a market index JSON file (built-in or remote).
+#[derive(Clone, Debug, Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct MarketIndexFile {
+    #[allow(dead_code)]
+    version: String,
+    generated_at: String,
+    #[serde(default)]
+    #[allow(dead_code)]
+    total_count: u32,
+    skills: Vec<MarketIndexEntry>,
+}
+
+/// A single skill entry inside a market index file.
+#[derive(Clone, Debug, Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct MarketIndexEntry {
+    id: String,
+    name: String,
+    kind: String,
+    summary: Option<String>,
+    description: Option<String>,
+    source_url: String,
+    repo: String,
+    #[allow(dead_code)]
+    path: String,
+    #[serde(default)]
+    stars: u64,
+    updated_at: Option<String>,
+    #[serde(default)]
+    categories: Vec<String>,
+    #[serde(default)]
+    hotness: f64,
+    #[allow(dead_code)]
+    author: Option<String>,
+    #[allow(dead_code)]
+    license: Option<String>,
+    #[allow(dead_code)]
+    version: Option<String>,
+}
+
+impl MarketIndexEntry {
+    fn to_candidate(&self) -> MarketCandidate {
+        let kind = match self.kind.as_str() {
+            "plugin" => ResourceKind::Plugin,
+            _ => ResourceKind::Skill,
+        };
+        MarketCandidate {
+            name: self.name.clone(),
+            kind,
+            summary: self.summary.clone(),
+            source_url: self.source_url.clone(),
+            skill_sha256: None,
+            repo: Some(self.repo.clone()),
+            stars: Some(self.stars),
+            origin: "index".to_string(),
+            categories: if self.categories.is_empty() {
+                None
+            } else {
+                Some(self.categories.clone())
+            },
+            hotness: Some(self.hotness),
+            description: self.description.clone(),
+            updated_at: self.updated_at.clone(),
+            index_id: Some(self.id.clone()),
+        }
+    }
+}
+
+const REMOTE_INDEX_CACHE_FILENAME: &str = "remote-market-index.json";
+const REMOTE_INDEX_TTL_SECS: u64 = 24 * 60 * 60; // 24 hours
+
+/// Load the built-in index embedded at compile time via `include_str!`.
+/// This is the L1 data source: zero network requests, instant first paint.
+fn load_builtin_index() -> Vec<MarketCandidate> {
+    let json = include_str!("../resources/built-in-index.json");
+    match serde_json::from_str::<MarketIndexFile>(json) {
+        Ok(index) => index.skills.iter().map(|e| e.to_candidate()).collect(),
+        Err(_) => {
+            // Degrade to the hardcoded curated list if the JSON is malformed.
+            curated_official_candidates()
+        }
+    }
+}
+
+/// Parse an ISO 8601 timestamp into a SystemTime for cache-TTL comparisons.
+fn parse_iso8601(timestamp: &str) -> HubResult<std::time::SystemTime> {
+    use std::time::SystemTime;
+    // Simple approach: parse "2026-06-23T06:00:00Z" manually.
+    // We only need the date portion for a rough TTL check.
+    let parts: Vec<&str> = timestamp.split('T').collect();
+    if parts.len() < 2 {
+        return Err(SkillHubError::Io(format!(
+            "Invalid timestamp: {timestamp}"
+        )));
+    }
+    let date_parts: Vec<u64> = parts[0]
+        .split('-')
+        .filter_map(|s| s.parse().ok())
+        .collect();
+    if date_parts.len() != 3 {
+        return Err(SkillHubError::Io(format!(
+            "Invalid date in timestamp: {timestamp}"
+        )));
+    }
+    let (year, month, day) = (date_parts[0], date_parts[1], date_parts[2]);
+    // Approximate: convert to days since epoch (1970-01-01).
+    let days = (year - 1970) * 365 + (month * 30) + day;
+    Ok(SystemTime::UNIX_EPOCH + Duration::from_secs(days * 86400))
+}
+
+/// Fetch the remote index JSON from a URL, with local file caching (24h TTL).
+/// This is the L2 data source: fetched in the background, merged into L1.
+fn fetch_remote_index(url: &str, cache_dir: &Path) -> HubResult<Vec<MarketCandidate>> {
+    let cache_path = cache_dir.join(REMOTE_INDEX_CACHE_FILENAME);
+
+    // Check local cache first.
+    if let Ok(cached) = fs::read_to_string(&cache_path) {
+        if let Ok(index) = serde_json::from_str::<MarketIndexFile>(&cached) {
+            if let Ok(generated) = parse_iso8601(&index.generated_at) {
+                if let Ok(elapsed) = generated.elapsed() {
+                    if elapsed.as_secs() < REMOTE_INDEX_TTL_SECS {
+                        return Ok(index.skills.iter().map(|e| e.to_candidate()).collect());
+                    }
+                }
+            }
+        }
+    }
+
+    // Cache miss or expired: fetch from remote.
+    let client = market_discovery_http_client()?;
+    let response = client
+        .get(url)
+        .send()
+        .map_err(|e| SkillHubError::Io(format!("Failed to fetch remote index: {e}")))?;
+    let body = response
+        .text()
+        .map_err(|e| SkillHubError::Io(format!("Failed to read remote index body: {e}")))?;
+
+    // Persist to cache (best-effort).
+    let _ = fs::create_dir_all(cache_dir);
+    let _ = fs::write(&cache_path, &body);
+
+    let index: MarketIndexFile = serde_json::from_str(&body)
+        .map_err(|e| SkillHubError::Io(format!("Failed to parse remote index: {e}")))?;
+    Ok(index.skills.iter().map(|e| e.to_candidate()).collect())
+}
+
+// --- End Route C ---
+
 #[derive(Clone, Debug, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MarketEntry {
@@ -133,6 +286,21 @@ pub struct MarketEntry {
     pub stars: Option<u64>,
     /// `official` (curated), `community` (discovered), or `index` (legacy JSON).
     pub origin: String,
+    /// Category tags from the index file.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub categories: Option<Vec<String>>,
+    /// Hotness score from the index file, used for sorting.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub hotness: Option<f64>,
+    /// Full description from the index file.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub description: Option<String>,
+    /// Repo last updated time (ISO 8601) from the index file.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub updated_at: Option<String>,
+    /// Unique ID from the index file.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub index_id: Option<String>,
 }
 
 #[derive(Clone, Debug, Serialize)]
@@ -276,13 +444,18 @@ async fn discover_market(
     token: Option<String>,
     include_curated: Option<bool>,
     resources: Vec<SkillResource>,
+    remote_index_url: Option<String>,
+    app_data_dir: Option<String>,
 ) -> Result<MarketResult, String> {
     tauri::async_runtime::spawn_blocking(move || {
+        let cache_dir = app_data_dir.as_ref().map(PathBuf::from);
         let (entries, warnings) = browse_market_v2(
             &sources,
             token.as_deref(),
             include_curated.unwrap_or(true),
             &resources,
+            remote_index_url.as_deref(),
+            cache_dir.as_deref(),
         );
         Ok(MarketResult { entries, warnings })
     })
@@ -303,6 +476,8 @@ async fn discover_repo(
             token.as_deref(),
             false,
             &resources,
+            None,
+            None,
         );
         Ok(MarketResult { entries, warnings })
     })
@@ -339,7 +514,7 @@ async fn discover_market_source(
     resources: Vec<SkillResource>,
 ) -> Result<MarketResult, String> {
     tauri::async_runtime::spawn_blocking(move || {
-        let (entries, warnings) = browse_market_v2(&[source], token.as_deref(), false, &resources);
+        let (entries, warnings) = browse_market_v2(&[source], token.as_deref(), false, &resources, None, None);
         Ok(MarketResult { entries, warnings })
     })
     .await
@@ -348,8 +523,53 @@ async fn discover_market_source(
 
 #[tauri::command]
 fn discover_curated_catalog(resources: Vec<SkillResource>) -> Result<MarketResult, String> {
-    let (entries, warnings) = browse_market_v2(&[], None, true, &resources);
+    let (entries, warnings) = browse_market_v2(&[], None, true, &resources, None, None);
     Ok(MarketResult { entries, warnings })
+}
+
+/// L1: Return the built-in index instantly — zero network requests.
+/// Used for first-paint so the market is never empty.
+#[tauri::command]
+fn discover_builtin_index(resources: Vec<SkillResource>) -> Result<MarketResult, String> {
+    let candidates = load_builtin_index();
+    let entries = assemble_market(candidates, &resources);
+    Ok(MarketResult {
+        entries,
+        warnings: vec![],
+    })
+}
+
+/// L2: Fetch the remote index JSON (with 24h local cache) and return entries.
+/// Called in the background after L1 is rendered.
+#[tauri::command]
+async fn refresh_remote_index(
+    app_handle: tauri::AppHandle,
+    url: Option<String>,
+    resources: Vec<SkillResource>,
+) -> Result<MarketResult, String> {
+    tauri::async_runtime::spawn_blocking(move || {
+        let default_url = "https://raw.githubusercontent.com/JerryLiu-uestc/skill-hub/gh-pages/index.json";
+        let url = url.as_deref().unwrap_or(default_url);
+        let cache_dir = app_handle
+            .path()
+            .app_data_dir()
+            .unwrap_or_else(|_| std::env::temp_dir());
+        match fetch_remote_index(url, &cache_dir) {
+            Ok(candidates) => {
+                let entries = assemble_market(candidates, &resources);
+                Ok(MarketResult {
+                    entries,
+                    warnings: vec![],
+                })
+            }
+            Err(error) => Ok(MarketResult {
+                entries: vec![],
+                warnings: vec![error.to_string()],
+            }),
+        }
+    })
+    .await
+    .map_err(|e| e.to_string())?
 }
 
 #[tauri::command]
@@ -952,6 +1172,11 @@ struct MarketCandidate {
     repo: Option<String>,
     stars: Option<u64>,
     origin: String,
+    categories: Option<Vec<String>>,
+    hotness: Option<f64>,
+    description: Option<String>,
+    updated_at: Option<String>,
+    index_id: Option<String>,
 }
 
 impl MarketCandidate {
@@ -968,6 +1193,11 @@ impl MarketCandidate {
             repo,
             stars: None,
             origin: "index".to_string(),
+            categories: None,
+            hotness: None,
+            description: None,
+            updated_at: None,
+            index_id: None,
         }
     }
 }
@@ -1025,6 +1255,11 @@ fn assemble_market(
             repo: candidate.repo,
             stars: candidate.stars,
             origin: candidate.origin,
+            categories: candidate.categories,
+            hotness: candidate.hotness,
+            description: candidate.description,
+            updated_at: candidate.updated_at,
+            index_id: candidate.index_id,
         });
     }
     sort_market(&mut market);
@@ -1033,8 +1268,19 @@ fn assemble_market(
 
 /// Leaderboard ordering: higher stars first, then name. Entries without a star
 /// count sort after those with one.
+/// Leaderboard ordering: higher hotness first (if available), then stars (desc),
+/// then name. Entries without a hotness or star count sort after those with one.
 fn sort_market(market: &mut [MarketEntry]) {
     market.sort_by(|left, right| {
+        // Prefer hotness score when both sides have it.
+        let left_hot = left.hotness.unwrap_or(0.0);
+        let right_hot = right.hotness.unwrap_or(0.0);
+        if right_hot != left_hot {
+            return right_hot
+                .partial_cmp(&left_hot)
+                .unwrap_or(std::cmp::Ordering::Equal);
+        }
+        // Fall back to stars.
         right
             .stars
             .unwrap_or(0)
@@ -1133,26 +1379,47 @@ fn curated_official_candidates() -> Vec<MarketCandidate> {
             repo: Some(OFFICIAL_REPO.to_string()),
             stars: None,
             origin: "official".to_string(),
+            categories: None,
+            hotness: None,
+            description: None,
+            updated_at: None,
+            index_id: None,
         })
         .collect()
 }
 
-/// Unified market browse: curated catalog (always) + every configured source.
-/// A source is discovered as a repo unless it ends in `.json` (legacy index).
-/// Network/rate-limit failures on a single source are collected as warnings
-/// rather than failing the whole market, so the curated catalog still shows.
+/// Unified market browse: built-in index (always) + remote index (if configured)
+/// + every configured source. A source is discovered as a repo unless it ends
+/// in `.json` (legacy index). Network/rate-limit failures on a single source
+/// are collected as warnings rather than failing the whole market, so the
+/// built-in index still shows.
 pub fn browse_market_v2(
     sources: &[String],
     token: Option<&str>,
     include_curated: bool,
     resources: &[SkillResource],
+    remote_index_url: Option<&str>,
+    cache_dir: Option<&Path>,
 ) -> (Vec<MarketEntry>, Vec<String>) {
     let mut candidates = Vec::new();
     let mut warnings = Vec::new();
+
+    // L1: Built-in index (replaces the old hardcoded curated list).
     if include_curated {
-        candidates.extend(curated_official_candidates());
+        candidates.extend(load_builtin_index());
     }
 
+    // L2: Remote index (background refresh, failure is non-fatal).
+    if let Some(url) = remote_index_url {
+        if let Some(dir) = cache_dir {
+            match fetch_remote_index(url, dir) {
+                Ok(found) => candidates.extend(found),
+                Err(error) => warnings.push(format!("remote-index: {error}")),
+            }
+        }
+    }
+
+    // L3: User-configured sources (GitHub repos or legacy JSON indexes).
     for source in sources
         .iter()
         .map(|source| source.trim())
@@ -1300,6 +1567,11 @@ fn discover_repo_skill_candidates(
             } else {
                 "community".to_string()
             },
+            categories: None,
+            hotness: None,
+            description: None,
+            updated_at: None,
+            index_id: None,
         });
     }
 
@@ -1356,6 +1628,11 @@ fn discover_repo_skill_candidates(
             } else {
                 "community".to_string()
             },
+            categories: None,
+            hotness: None,
+            description: None,
+            updated_at: None,
+            index_id: None,
         });
     }
 
@@ -1453,6 +1730,11 @@ fn discover_repo_skill_candidates_from_dir(
             } else {
                 "community".to_string()
             },
+            categories: None,
+            hotness: None,
+            description: None,
+            updated_at: None,
+            index_id: None,
         });
     }
 
@@ -1502,6 +1784,11 @@ fn discover_repo_skill_candidates_from_dir(
             } else {
                 "community".to_string()
             },
+            categories: None,
+            hotness: None,
+            description: None,
+            updated_at: None,
+            index_id: None,
         });
     }
 
@@ -2404,6 +2691,8 @@ pub fn run() {
             discover_market,
             discover_market_source,
             discover_curated_catalog,
+            discover_builtin_index,
+            refresh_remote_index,
             discover_repo,
             install_github_skill,
             check_skill_update,
@@ -2956,6 +3245,11 @@ mod tests {
                 repo: Some("a/zeta".to_string()),
                 stars: Some(10),
                 origin: "community".to_string(),
+                categories: None,
+                hotness: None,
+                description: None,
+                updated_at: None,
+                index_id: None,
             },
             MarketCandidate {
                 name: "alpha".to_string(),
@@ -2966,6 +3260,11 @@ mod tests {
                 repo: Some("a/alpha".to_string()),
                 stars: Some(500),
                 origin: "community".to_string(),
+                categories: None,
+                hotness: None,
+                description: None,
+                updated_at: None,
+                index_id: None,
             },
             MarketCandidate {
                 name: "beta".to_string(),
@@ -2976,6 +3275,11 @@ mod tests {
                 repo: Some("a/beta".to_string()),
                 stars: None,
                 origin: "community".to_string(),
+                categories: None,
+                hotness: None,
+                description: None,
+                updated_at: None,
+                index_id: None,
             },
         ];
         let market = assemble_market(candidates, &[]);
@@ -2988,7 +3292,7 @@ mod tests {
     fn browse_market_v2_includes_curated_catalog_offline() {
         // No sources, curated on: must return the 17 official skills with no
         // network access at all.
-        let (entries, warnings) = browse_market_v2(&[], None, true, &[]);
+        let (entries, warnings) = browse_market_v2(&[], None, true, &[], None, None);
         assert_eq!(entries.len(), 17);
         assert!(warnings.is_empty());
         assert!(entries.iter().all(|entry| entry.origin == "official"));

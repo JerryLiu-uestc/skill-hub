@@ -1,0 +1,33 @@
+name: Update Market Index
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # 每天 UTC 06:00
+  workflow_dispatch: {}   # 手动触发
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/skill-repos.json'
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install requests pyyaml
+      - name: Generate index
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/generate_index.py
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ github.token }}
+          publish_dir: ./dist-index

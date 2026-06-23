@@ -50,6 +50,8 @@ interface AppSettings {
   githubIndexUrls: string[];
   marketSources: string[];
   githubToken: string;
+  remoteIndexUrl: string;
+  customRegistrySources: string[];
 }
 
 const DEFAULT_MARKET_SOURCES = [
@@ -58,11 +60,12 @@ const DEFAULT_MARKET_SOURCES = [
   "https://github.com/anthropics/claude-plugins-official",
 ];
 const LEGACY_DEFAULT_MARKET_SOURCES = DEFAULT_MARKET_SOURCES.slice(0, 2);
+const DEFAULT_REMOTE_INDEX_URL =
+  "https://raw.githubusercontent.com/JerryLiu-uestc/skill-hub/gh-pages/index.json";
 
 const MARKET_CACHE_KEY = "skillHubMarketCache";
 const MARKET_CACHE_TTL_MS = 30 * 60 * 1000;
 const MARKET_PAGE_SIZE = 60;
-const MARKET_LOADER_MIN_MS = 1200;
 const MARKET_SOURCE_TIMEOUT_MS = 120000;
 
 interface MarketCache {
@@ -81,6 +84,7 @@ interface AppProps {
   onDiscoverRepo?: (url: string) => MarketEntry[] | Promise<MarketEntry[]>;
   onDiscoverMarketSource?: (source: string) => MarketResult | Promise<MarketResult>;
   onDiscoverCuratedCatalog?: () => MarketResult | Promise<MarketResult>;
+  onDiscoverBuiltinIndex?: () => MarketResult | Promise<MarketResult>;
 }
 
 function App({
@@ -92,7 +96,7 @@ function App({
   onUpdateResource,
   onDiscoverRepo,
   onDiscoverMarketSource,
-  onDiscoverCuratedCatalog,
+  onDiscoverBuiltinIndex,
 }: AppProps) {
   const [activeNav, setActiveNav] = useState<NavView>("overview");
   const [resources, setResources] = useState<SkillResource[]>(initialResources ?? []);
@@ -417,10 +421,12 @@ function App({
     const token = settings.githubToken || null;
     const sources = settings.marketSources.filter((s) => s.trim().length > 0);
     const currentResources = resources;
+    const remoteIndexUrl = settings.remoteIndexUrl || DEFAULT_REMOTE_INDEX_URL;
 
-    // Build initial state: curated catalog + each configured source
+    // Build initial state: built-in index + remote index + each configured source
     const initial: Record<string, SourceState> = {};
-    initial["__curated__"] = { label: text.curatedCatalog, status: "loading" };
+    initial["__builtin__"] = { label: text.curatedCatalog, status: "loading" };
+    initial["__remote__"] = { label: "Remote Index", status: "loading" };
     for (const source of sources) {
       initial[source] = { label: sourceUrlLabel(source), status: "loading" };
     }
@@ -431,8 +437,6 @@ function App({
 
     // Let React render the loader + source status before IPC starts.
     await new Promise((resolve) => setTimeout(resolve, 40));
-
-    const loadingStartedAt = performance.now();
 
     const nextStates: Record<string, SourceState> = { ...initial };
     const entries: MarketEntry[] = [];
@@ -452,6 +456,14 @@ function App({
       setMarket(dedupeEntries());
     };
 
+    const sourceLabel = (key: string) =>
+      nextStates[key]?.label ??
+      (key === "__builtin__"
+        ? text.curatedCatalog
+        : key === "__remote__"
+          ? "Remote Index"
+          : sourceUrlLabel(key));
+
     const loadSource = async (key: string, task: Promise<MarketResult>) => {
       try {
         const result = await withTimeout(
@@ -460,7 +472,7 @@ function App({
           text.marketSourceTimedOut,
         );
         nextStates[key] = {
-          label: nextStates[key]?.label ?? (key === "__curated__" ? text.curatedCatalog : sourceUrlLabel(key)),
+          label: sourceLabel(key),
           status: result.entries.length > 0 || result.warnings.length === 0 ? "success" : "error",
           count: result.entries.length,
           error: result.warnings[0],
@@ -470,7 +482,7 @@ function App({
       } catch (error) {
         failedCount++;
         nextStates[key] = {
-          label: nextStates[key]?.label ?? key,
+          label: sourceLabel(key),
           status: "error",
           error: String(error).slice(0, 120),
         };
@@ -478,12 +490,22 @@ function App({
       commitProgress();
     };
 
+    // Step 1: L1 built-in index — load synchronously for instant first paint.
+    await loadSource(
+      "__builtin__",
+      onDiscoverBuiltinIndex
+        ? Promise.resolve(onDiscoverBuiltinIndex())
+        : invoke<MarketResult>("discover_builtin_index", { resources: currentResources }),
+    );
+
+    // Step 2 + 3: L2 remote index + L3 user sources — fire in parallel.
     const tasks: Promise<void>[] = [
       loadSource(
-        "__curated__",
-        onDiscoverCuratedCatalog
-          ? Promise.resolve(onDiscoverCuratedCatalog())
-          : invoke<MarketResult>("discover_curated_catalog", { resources: currentResources }),
+        "__remote__",
+        invoke<MarketResult>("refresh_remote_index", {
+          url: remoteIndexUrl,
+          resources: currentResources,
+        }).catch(() => ({ entries: [], warnings: ["Remote index unavailable"] }) as MarketResult),
       ),
     ];
 
@@ -512,10 +534,6 @@ function App({
       clearMarketCache();
     }
 
-    const elapsed = performance.now() - loadingStartedAt;
-    if (elapsed < MARKET_LOADER_MIN_MS) {
-      await new Promise((resolve) => window.setTimeout(resolve, MARKET_LOADER_MIN_MS - elapsed));
-    }
     setMarketLoading(false);
     if (!background) {
       if (failedCount > 0 && nextMarket.length > 0) {
@@ -1929,6 +1947,8 @@ function loadSettings(): AppSettings {
     githubIndexUrls: [],
     marketSources: [...DEFAULT_MARKET_SOURCES],
     githubToken: "",
+    remoteIndexUrl: DEFAULT_REMOTE_INDEX_URL,
+    customRegistrySources: [],
   };
   try {
     const storage = window.localStorage;
@@ -1951,6 +1971,13 @@ function loadSettings(): AppSettings {
         ? normalizeMarketSources(parsed.marketSources)
         : [...DEFAULT_MARKET_SOURCES],
       githubToken: typeof parsed.githubToken === "string" ? parsed.githubToken : "",
+      remoteIndexUrl:
+        typeof parsed.remoteIndexUrl === "string" && parsed.remoteIndexUrl.trim().length > 0
+          ? parsed.remoteIndexUrl
+          : DEFAULT_REMOTE_INDEX_URL,
+      customRegistrySources: Array.isArray(parsed.customRegistrySources)
+        ? parsed.customRegistrySources.filter((url): url is string => typeof url === "string" && url.trim().length > 0)
+        : [],
     };
   } catch {
     return defaults;
@@ -2011,7 +2038,11 @@ function clearMarketCache() {
 }
 
 function marketSourceSignature(settings: AppSettings) {
-  return JSON.stringify([...settings.marketSources].sort());
+  return JSON.stringify({
+    sources: [...settings.marketSources].sort(),
+    remoteIndexUrl: settings.remoteIndexUrl,
+    registrySources: [...settings.customRegistrySources].sort(),
+  });
 }
 
 function normalizeMarketSources(values: unknown[]) {

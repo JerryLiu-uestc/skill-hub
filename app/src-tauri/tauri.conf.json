@@ -25,6 +25,7 @@
     "active": true,
     "targets": "all",
     "createUpdaterArtifacts": true,
+    "resources": ["resources/built-in-index.json"],
     "macOS": {
       "dmg": {
         "background": "assets/dmg-background.png",

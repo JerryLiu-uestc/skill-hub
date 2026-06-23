@@ -1,0 +1,17 @@
+[
+  {
+    "repo": "anthropics/skills",
+    "branch": "main",
+    "skillPath": "skills"
+  },
+  {
+    "repo": "obra/superpowers",
+    "branch": "main",
+    "skillPath": "skills"
+  },
+  {
+    "repo": "anthropics/claude-plugins-official",
+    "branch": "main",
+    "skillPath": "."
+  }
+]

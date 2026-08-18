@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-08-17T06:30:07Z",
-  "totalCount": 62,
+  "generatedAt": "2026-08-18T06:22:34Z",
+  "totalCount": 64,
   "skills": [
     {
       "id": "skill-obra-brainstorming",
@@ -12,13 +12,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
       "repo": "obra/superpowers",
       "path": "skills/brainstorming/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "brainstorming"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -32,13 +32,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents",
       "repo": "obra/superpowers",
       "path": "skills/dispatching-parallel-agents/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "dispatching parallel agents"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -52,13 +52,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
       "repo": "obra/superpowers",
       "path": "skills/executing-plans/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "executing plans"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -72,13 +72,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch",
       "repo": "obra/superpowers",
       "path": "skills/finishing-a-development-branch/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "finishing a development branch"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -92,13 +92,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/receiving-code-review",
       "repo": "obra/superpowers",
       "path": "skills/receiving-code-review/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "receiving code review"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -112,13 +112,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/requesting-code-review",
       "repo": "obra/superpowers",
       "path": "skills/requesting-code-review/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "requesting code review"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -132,13 +132,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
       "repo": "obra/superpowers",
       "path": "skills/subagent-driven-development/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "subagent driven development"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -152,13 +152,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/systematic-debugging",
       "repo": "obra/superpowers",
       "path": "skills/systematic-debugging/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "systematic debugging"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -172,13 +172,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
       "repo": "obra/superpowers",
       "path": "skills/test-driven-development/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "test driven development"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -192,13 +192,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/using-git-worktrees",
       "repo": "obra/superpowers",
       "path": "skills/using-git-worktrees/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "using git worktrees"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -212,13 +212,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/using-superpowers",
       "repo": "obra/superpowers",
       "path": "skills/using-superpowers/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "using superpowers"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -232,13 +232,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/verification-before-completion",
       "repo": "obra/superpowers",
       "path": "skills/verification-before-completion/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "verification before completion"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -252,13 +252,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
       "repo": "obra/superpowers",
       "path": "skills/writing-plans/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "writing plans"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -272,13 +272,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-skills",
       "repo": "obra/superpowers",
       "path": "skills/writing-skills/SKILL.md",
-      "stars": 272901,
-      "updatedAt": "2026-08-17T06:26:13Z",
+      "stars": 273336,
+      "updatedAt": "2026-08-18T06:20:50Z",
       "categories": [
         "skills",
         "writing skills"
       ],
-      "hotness": 273001.0,
+      "hotness": 273436.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -292,13 +292,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art",
       "repo": "anthropics/skills",
       "path": "skills/algorithmic-art/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "algorithmic art"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -312,13 +312,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
       "repo": "anthropics/skills",
       "path": "skills/brand-guidelines/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "brand guidelines"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -332,13 +332,33 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
       "repo": "anthropics/skills",
       "path": "skills/canvas-design/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "canvas design"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
+      "author": "anthropics",
+      "license": null,
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-claude-academy-guide",
+      "name": "claude-academy-guide",
+      "kind": "skill",
+      "summary": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\", \"how can I\", \"getting started with\", \"what can Claude do\", \"teach me\", \"learn to use\"; questions about artifacts, projects, skills, plugins, connectors, MCP, Claude Code, Claude Cowork, Claude in Excel, Claude in PowerPoint, Claude in Chrome, the Claude API, or prompting technique; requests about rolling Claude out to a team, class, or organization; and any ask for training materials, onboarding content, or learning resources. Use it when the user is learning how to use a feature or product — not when they are mid-task and just want the task done. This skill composes with other skills: after consulting product documentation to answer how a Claude feature works, also check here for a matching course or tutorial — a docs-grounded answer and an Academy recommendation belong together, even when another skill has already answered the question. Only recommend on a strong match; never invent Academy content.",
+      "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\", \"how can I\", \"getting started with\", \"what can Claude do\", \"teach me\", \"learn to use\"; questions about artifacts, projects, skills, plugins, connectors, MCP, Claude Code, Claude Cowork, Claude in Excel, Claude in PowerPoint, Claude in Chrome, the Claude API, or prompting technique; requests about rolling Claude out to a team, class, or organization; and any ask for training materials, onboarding content, or learning resources. Use it when the user is learning how to use a feature or product — not when they are mid-task and just want the task done. This skill composes with other skills: after consulting product documentation to answer how a Claude feature works, also check here for a matching course or tutorial — a docs-grounded answer and an Academy recommendation belong together, even when another skill has already answered the question. Only recommend on a strong match; never invent Academy content.\n",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-academy-guide",
+      "repo": "anthropics/skills",
+      "path": "skills/claude-academy-guide/SKILL.md",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
+      "categories": [
+        "skills",
+        "claude academy guide"
+      ],
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -352,13 +372,33 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
       "repo": "anthropics/skills",
       "path": "skills/claude-api/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "claude api"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
+      "author": "anthropics",
+      "license": null,
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-discernment-nudge",
+      "name": "discernment-nudge",
+      "kind": "skill",
+      "summary": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretation of data, factual claims they may rely on, or a multi-step argument — invoke this skill BEFORE finalizing your reply and then, if it applies, append 2-3 short follow-up questions, each tied to something specific in what you just produced, that help the user check key facts, probe the reasoning or assumptions, and notice missing context. Do this at most once per conversation. Skip it when the user asked a trivial how-to or simple lookup, wants a purely educational explanation, asked you only to format, convert, or assemble a file from content they provided, is writing code they will run, is doing creative writing or casual chat, or already asked you to double-check, cite, or review — the skill file explains these boundaries and the exact output format.",
+      "description": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretation of data, factual claims they may rely on, or a multi-step argument — invoke this skill BEFORE finalizing your reply and then, if it applies, append 2-3 short follow-up questions, each tied to something specific in what you just produced, that help the user check key facts, probe the reasoning or assumptions, and notice missing context. Do this at most once per conversation. Skip it when the user asked a trivial how-to or simple lookup, wants a purely educational explanation, asked you only to format, convert, or assemble a file from content they provided, is writing code they will run, is doing creative writing or casual chat, or already asked you to double-check, cite, or review — the skill file explains these boundaries and the exact output format.\n",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/discernment-nudge",
+      "repo": "anthropics/skills",
+      "path": "skills/discernment-nudge/SKILL.md",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
+      "categories": [
+        "skills",
+        "discernment nudge"
+      ],
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -372,13 +412,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring",
       "repo": "anthropics/skills",
       "path": "skills/doc-coauthoring/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "doc coauthoring"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -392,13 +432,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/docx",
       "repo": "anthropics/skills",
       "path": "skills/docx/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "docx"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -412,13 +452,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
       "repo": "anthropics/skills",
       "path": "skills/frontend-design/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "frontend design"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -432,13 +472,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/internal-comms",
       "repo": "anthropics/skills",
       "path": "skills/internal-comms/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "internal comms"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -452,13 +492,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
       "repo": "anthropics/skills",
       "path": "skills/mcp-builder/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "mcp builder"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -472,13 +512,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pdf",
       "repo": "anthropics/skills",
       "path": "skills/pdf/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "pdf"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -492,13 +532,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pptx",
       "repo": "anthropics/skills",
       "path": "skills/pptx/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "pptx"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -512,13 +552,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
       "repo": "anthropics/skills",
       "path": "skills/skill-creator/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "skill creator"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -532,13 +572,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator",
       "repo": "anthropics/skills",
       "path": "skills/slack-gif-creator/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "slack gif creator"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -552,13 +592,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
       "repo": "anthropics/skills",
       "path": "skills/theme-factory/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "theme factory"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -572,13 +612,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder",
       "repo": "anthropics/skills",
       "path": "skills/web-artifacts-builder/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "web artifacts builder"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -592,13 +632,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
       "repo": "anthropics/skills",
       "path": "skills/webapp-testing/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "webapp testing"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -612,13 +652,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
       "repo": "anthropics/skills",
       "path": "skills/xlsx/SKILL.md",
-      "stars": 169811,
-      "updatedAt": "2026-08-17T06:27:50Z",
+      "stars": 170096,
+      "updatedAt": "2026-08-18T06:22:20Z",
       "categories": [
         "skills",
         "xlsx"
       ],
-      "hotness": 169911.0,
+      "hotness": 170196.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -632,15 +672,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord/skills/access",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/discord/skills/access/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "external plugins",
         "discord",
         "skills",
         "access"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -654,15 +694,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord/skills/configure",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/discord/skills/configure/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "external plugins",
         "discord",
         "skills",
         "configure"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -676,15 +716,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/imessage/skills/access",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/imessage/skills/access/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "external plugins",
         "imessage",
         "skills",
         "access"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -698,15 +738,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/imessage/skills/configure",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/imessage/skills/configure/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "external plugins",
         "imessage",
         "skills",
         "configure"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -720,15 +760,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/telegram/skills/access",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/telegram/skills/access/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "external plugins",
         "telegram",
         "skills",
         "access"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -742,15 +782,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/telegram/skills/configure",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/telegram/skills/configure/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "external plugins",
         "telegram",
         "skills",
         "configure"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -764,15 +804,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup/skills/claude-automation-recommender",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/claude-code-setup/skills/claude-automation-recommender/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "claude code setup",
         "skills",
         "claude automation recommender"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -786,15 +826,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management/skills/claude-md-improver",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/claude-md-management/skills/claude-md-improver/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "claude md management",
         "skills",
         "claude md improver"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -808,14 +848,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-security/skills/claude-security",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/claude-security/skills/claude-security/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "claude security",
         "skills"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -829,15 +869,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/cwc-makers/skills/cardputer-buddy",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/cwc-makers/skills/cardputer-buddy/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "cwc makers",
         "skills",
         "cardputer buddy"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -851,15 +891,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/cwc-makers/skills/m5-onboard",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/cwc-makers/skills/m5-onboard/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "cwc makers",
         "skills",
         "m5 onboard"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -873,15 +913,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/example-plugin/skills/example-command",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/example-plugin/skills/example-command/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "example plugin",
         "skills",
         "example command"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -895,15 +935,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/example-plugin/skills/example-skill",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/example-plugin/skills/example-skill/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "example plugin",
         "skills",
         "example skill"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -917,14 +957,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design/skills/frontend-design",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/frontend-design/skills/frontend-design/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "frontend design",
         "skills"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -938,15 +978,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/hookify/skills/writing-rules",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/hookify/skills/writing-rules/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "hookify",
         "skills",
         "writing rules"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -960,14 +1000,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-olympiad/skills/math-olympiad",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/math-olympiad/skills/math-olympiad/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "math olympiad",
         "skills"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -981,15 +1021,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev/skills/build-mcp-app",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/mcp-server-dev/skills/build-mcp-app/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "mcp server dev",
         "skills",
         "build mcp app"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1003,15 +1043,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev/skills/build-mcp-server",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/mcp-server-dev/skills/build-mcp-server/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "mcp server dev",
         "skills",
         "build mcp server"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1025,15 +1065,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev/skills/build-mcpb",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/mcp-server-dev/skills/build-mcpb/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "mcp server dev",
         "skills",
         "build mcpb"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1047,14 +1087,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/playground/skills/playground",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/playground/skills/playground/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "playground",
         "skills"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1068,15 +1108,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/agent-development",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/agent-development/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "agent development"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1090,15 +1130,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/command-development",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/command-development/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "command development"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.2.0"
@@ -1112,15 +1152,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/hook-development",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/hook-development/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "hook development"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1134,15 +1174,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/mcp-integration",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "mcp integration"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1156,15 +1196,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/plugin-settings",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/plugin-settings/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "plugin settings"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1178,15 +1218,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/plugin-structure",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/plugin-structure/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "plugin structure"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1200,15 +1240,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/skill-development",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/skill-development/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "skill development"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1222,14 +1262,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/project-artifact/skills/project-artifact",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/project-artifact/skills/project-artifact/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "project artifact",
         "skills"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1243,14 +1283,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/receipts/skills/receipts",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/receipts/skills/receipts/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "receipts",
         "skills"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1264,14 +1304,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report/skills/session-report",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/session-report/skills/session-report/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "session report",
         "skills"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1285,14 +1325,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator/skills/skill-creator",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/skill-creator/skills/skill-creator/SKILL.md",
-      "stars": 33598,
-      "updatedAt": "2026-08-17T06:18:16Z",
+      "stars": 33635,
+      "updatedAt": "2026-08-18T06:13:05Z",
       "categories": [
         "plugins",
         "skill creator",
         "skills"
       ],
-      "hotness": 33698.0,
+      "hotness": 33735.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"

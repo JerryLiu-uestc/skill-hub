@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-11-11T13:06:14Z",
-  "totalCount": 74,
+  "generatedAt": "2026-11-12T14:08:57Z",
+  "totalCount": 91,
   "skills": [
     {
       "id": "skill-obra-brainstorming",
@@ -12,13 +12,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
       "repo": "obra/superpowers",
       "path": "skills/brainstorming/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "brainstorming"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -32,13 +32,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/diagnosing-superpowers",
       "repo": "obra/superpowers",
       "path": "skills/diagnosing-superpowers/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "diagnosing superpowers"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -52,13 +52,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/dispatching-parallel-agents",
       "repo": "obra/superpowers",
       "path": "skills/dispatching-parallel-agents/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "dispatching parallel agents"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -72,13 +72,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/executing-plans",
       "repo": "obra/superpowers",
       "path": "skills/executing-plans/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "executing plans"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -92,13 +92,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch",
       "repo": "obra/superpowers",
       "path": "skills/finishing-a-development-branch/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "finishing a development branch"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -112,13 +112,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/receiving-code-review",
       "repo": "obra/superpowers",
       "path": "skills/receiving-code-review/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "receiving code review"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -132,13 +132,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/requesting-code-review",
       "repo": "obra/superpowers",
       "path": "skills/requesting-code-review/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "requesting code review"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -152,13 +152,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/subagent-driven-development",
       "repo": "obra/superpowers",
       "path": "skills/subagent-driven-development/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "subagent driven development"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -172,13 +172,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/systematic-debugging",
       "repo": "obra/superpowers",
       "path": "skills/systematic-debugging/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "systematic debugging"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -192,13 +192,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
       "repo": "obra/superpowers",
       "path": "skills/test-driven-development/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "test driven development"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -212,13 +212,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/using-git-worktrees",
       "repo": "obra/superpowers",
       "path": "skills/using-git-worktrees/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "using git worktrees"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -232,13 +232,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/using-superpowers",
       "repo": "obra/superpowers",
       "path": "skills/using-superpowers/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "using superpowers"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -252,13 +252,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/verification-before-completion",
       "repo": "obra/superpowers",
       "path": "skills/verification-before-completion/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "verification before completion"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -272,13 +272,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-plans",
       "repo": "obra/superpowers",
       "path": "skills/writing-plans/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "writing plans"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -292,13 +292,13 @@
       "sourceUrl": "https://github.com/obra/superpowers/tree/main/skills/writing-skills",
       "repo": "obra/superpowers",
       "path": "skills/writing-skills/SKILL.md",
-      "stars": 316033,
-      "updatedAt": "2026-11-11T13:05:14Z",
+      "stars": 316589,
+      "updatedAt": "2026-11-12T14:06:27Z",
       "categories": [
         "skills",
         "writing skills"
       ],
-      "hotness": 316133.0,
+      "hotness": 316689.0,
       "author": "obra",
       "license": "MIT",
       "version": "1.0.0"
@@ -312,13 +312,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/academy-guide",
       "repo": "anthropics/skills",
       "path": "skills/academy-guide/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "academy guide"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -332,13 +332,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art",
       "repo": "anthropics/skills",
       "path": "skills/algorithmic-art/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "algorithmic art"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -352,13 +352,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
       "repo": "anthropics/skills",
       "path": "skills/brand-guidelines/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "brand guidelines"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -372,13 +372,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
       "repo": "anthropics/skills",
       "path": "skills/canvas-design/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "canvas design"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -392,13 +392,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/claude-api",
       "repo": "anthropics/skills",
       "path": "skills/claude-api/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "claude api"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -412,13 +412,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/discernment-nudge",
       "repo": "anthropics/skills",
       "path": "skills/discernment-nudge/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "discernment nudge"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -432,13 +432,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring",
       "repo": "anthropics/skills",
       "path": "skills/doc-coauthoring/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "doc coauthoring"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -452,13 +452,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/docx",
       "repo": "anthropics/skills",
       "path": "skills/docx/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "docx"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -472,13 +472,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
       "repo": "anthropics/skills",
       "path": "skills/frontend-design/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "frontend design"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -492,13 +492,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/internal-comms",
       "repo": "anthropics/skills",
       "path": "skills/internal-comms/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "internal comms"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -512,13 +512,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
       "repo": "anthropics/skills",
       "path": "skills/mcp-builder/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "mcp builder"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -532,13 +532,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pdf",
       "repo": "anthropics/skills",
       "path": "skills/pdf/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "pdf"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -552,13 +552,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pptx",
       "repo": "anthropics/skills",
       "path": "skills/pptx/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "pptx"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -572,13 +572,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
       "repo": "anthropics/skills",
       "path": "skills/skill-creator/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "skill creator"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -592,13 +592,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator",
       "repo": "anthropics/skills",
       "path": "skills/slack-gif-creator/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "slack gif creator"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -612,13 +612,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
       "repo": "anthropics/skills",
       "path": "skills/theme-factory/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "theme factory"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -632,13 +632,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder",
       "repo": "anthropics/skills",
       "path": "skills/web-artifacts-builder/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "web artifacts builder"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -652,13 +652,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
       "repo": "anthropics/skills",
       "path": "skills/webapp-testing/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "webapp testing"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -672,13 +672,13 @@
       "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
       "repo": "anthropics/skills",
       "path": "skills/xlsx/SKILL.md",
-      "stars": 192828,
-      "updatedAt": "2026-11-11T13:05:45Z",
+      "stars": 193506,
+      "updatedAt": "2026-11-12T14:08:03Z",
       "categories": [
         "skills",
         "xlsx"
       ],
-      "hotness": 192928.0,
+      "hotness": 193606.0,
       "author": "anthropics",
       "license": null,
       "version": "1.0.0"
@@ -692,15 +692,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord/skills/access",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/discord/skills/access/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "external plugins",
         "discord",
         "skills",
         "access"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -714,15 +714,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord/skills/configure",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/discord/skills/configure/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "external plugins",
         "discord",
         "skills",
         "configure"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -736,15 +736,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/imessage/skills/access",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/imessage/skills/access/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "external plugins",
         "imessage",
         "skills",
         "access"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -758,15 +758,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/imessage/skills/configure",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/imessage/skills/configure/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "external plugins",
         "imessage",
         "skills",
         "configure"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -780,15 +780,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/telegram/skills/access",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/telegram/skills/access/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "external plugins",
         "telegram",
         "skills",
         "access"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -802,15 +802,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/telegram/skills/configure",
       "repo": "anthropics/claude-plugins-official",
       "path": "external_plugins/telegram/skills/configure/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "external plugins",
         "telegram",
         "skills",
         "configure"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -824,15 +824,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/champion-kit/skills/climb",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/champion-kit/skills/climb/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "champion kit",
         "skills",
         "climb"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -846,15 +846,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/champion-kit/skills/faq",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/champion-kit/skills/faq/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "champion kit",
         "skills",
         "faq"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -868,15 +868,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/champion-kit/skills/hackathon",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/champion-kit/skills/hackathon/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "champion kit",
         "skills",
         "hackathon"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -890,15 +890,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/champion-kit/skills/maturity",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/champion-kit/skills/maturity/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "champion kit",
         "skills",
         "maturity"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -912,15 +912,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/champion-kit/skills/office-hours",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/champion-kit/skills/office-hours/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "champion kit",
         "skills",
         "office hours"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -934,15 +934,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/champion-kit/skills/patterns",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/champion-kit/skills/patterns/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "champion kit",
         "skills",
         "patterns"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -956,15 +956,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/champion-kit/skills/routines",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/champion-kit/skills/routines/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "champion kit",
         "skills",
         "routines"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -978,15 +978,389 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup/skills/claude-automation-recommender",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/claude-code-setup/skills/claude-automation-recommender/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "claude code setup",
         "skills",
         "claude automation recommender"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-breakdown-diagnosis",
+      "name": "breakdown-diagnosis",
+      "kind": "skill",
+      "summary": "When a machine goes down, reads the sensor window before the failure, the asset's maintenance history including the free-text close-out notes technicians actually wrote, photos of what they can see, and the manufacturer's troubleshooting tree — then ranks likely causes, each with its supporting evidence, the specific prior work orders behind it, and the cheapest test that would tell them apart. Surfaces any safety implication before any diagnosis. Drafts the PM interval change that would stop it recurring, and emits a downtime record for the next production report. Batch mode ranks bad actors across every asset. Use when someone says \"the machine is down,\" \"what's wrong with this machine,\" \"why does this keep failing,\" \"diagnose this,\" or \"which machines are hurting us most.\"",
+      "description": "When a machine goes down, reads the sensor window before the failure, the asset's maintenance history including the free-text close-out notes technicians actually wrote, photos of what they can see, and the manufacturer's troubleshooting tree — then ranks likely causes, each with its supporting evidence, the specific prior work orders behind it, and the cheapest test that would tell them apart. Surfaces any safety implication before any diagnosis. Drafts the PM interval change that would stop it recurring, and emits a downtime record for the next production report. Batch mode ranks bad actors across every asset. Use when someone says \"the machine is down,\" \"what's wrong with this machine,\" \"why does this keep failing,\" \"diagnose this,\" or \"which machines are hurting us most.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/breakdown-diagnosis",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/breakdown-diagnosis/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "breakdown diagnosis"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-breakdown-to-next-report",
+      "name": "breakdown-to-next-report",
+      "kind": "skill",
+      "summary": "Runs the chain from a machine going down to the diagnosis landing in tomorrow's production report: reads the sensor window, the maintenance history and its free-text close-out notes, technician photographs and the manufacturer's manual together, ranks likely causes with the cheapest test that tells them apart, then folds the diagnosis and its downtime into the next morning's downtime log and exceptions. Use when someone says \"run the breakdown chain,\" \"a machine went down,\" \"diagnose this and get it into the report,\" or \"breakdown to next report.\"",
+      "description": "Runs the chain from a machine going down to the diagnosis landing in tomorrow's production report: reads the sensor window, the maintenance history and its free-text close-out notes, technician photographs and the manufacturer's manual together, ranks likely causes with the cheapest test that tells them apart, then folds the diagnosis and its downtime into the next morning's downtime log and exceptions. Use when someone says \"run the breakdown chain,\" \"a machine went down,\" \"diagnose this and get it into the report,\" or \"breakdown to next report.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/breakdown-to-next-report",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/breakdown-to-next-report/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "breakdown to next report"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-custom-connector",
+      "name": "custom-connector",
+      "kind": "skill",
+      "summary": "Gets the plugin talking to a manufacturing system that has no vendor MCP, working down a seven-tier access ladder in order — vendor MCP, community MCP, a scoped API wrapper, a read-only database view, a Zapier bridge, screen automation as a last resort, or a scheduled export contract — and stopping at the highest rung that actually works. States plainly at every rung what the customer gets, what it costs, and how it will eventually break. Most often the answer is that a vendor MCP already exists and nothing needs building — just an admin turning it on. Maps whatever it reaches onto the consolidated dataset schema, so no downstream skill changes. Credentials never enter the conversation. Use when someone says \"connect our ERP,\" \"we use SAP,\" \"can you reach our MES,\" \"set up a connector for this system,\" or \"our system isn't supported.\"",
+      "description": "Gets the plugin talking to a manufacturing system that has no vendor MCP, working down a seven-tier access ladder in order — vendor MCP, community MCP, a scoped API wrapper, a read-only database view, a Zapier bridge, screen automation as a last resort, or a scheduled export contract — and stopping at the highest rung that actually works. States plainly at every rung what the customer gets, what it costs, and how it will eventually break. Most often the answer is that a vendor MCP already exists and nothing needs building — just an admin turning it on. Maps whatever it reaches onto the consolidated dataset schema, so no downstream skill changes. Credentials never enter the conversation. Use when someone says \"connect our ERP,\" \"we use SAP,\" \"can you reach our MES,\" \"set up a connector for this system,\" or \"our system isn't supported.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/custom-connector",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/custom-connector/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "custom connector"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-customer-inquiry-intake",
+      "name": "customer-inquiry-intake",
+      "kind": "skill",
+      "summary": "Reads a customer RFQ in whatever shape it arrived — a PDF drawing package, a 40-line spreadsheet, a portal export, a phone photo of a marked-up print, or a forwarded thread where the real requirement is four messages down — and pulls specifications, quantities and dates into one consistent intake form with every field traceable to the file and page it came from. Records how each tolerance was read and which geometry path each line takes. Reports what was never stated separately from what was stated two different ways. Checks the request against what the plant can actually build before asking the customer anything, drafts the questions back as sendable text, and returns a provisional bid/no-bid that names which unanswered question would change it. Use when someone says \"an RFQ came in,\" \"can we quote this,\" \"should we bid this job,\" \"read this inquiry,\" or \"what's missing from this RFQ?\"",
+      "description": "Reads a customer RFQ in whatever shape it arrived — a PDF drawing package, a 40-line spreadsheet, a portal export, a phone photo of a marked-up print, or a forwarded thread where the real requirement is four messages down — and pulls specifications, quantities and dates into one consistent intake form with every field traceable to the file and page it came from. Records how each tolerance was read and which geometry path each line takes. Reports what was never stated separately from what was stated two different ways. Checks the request against what the plant can actually build before asking the customer anything, drafts the questions back as sendable text, and returns a provisional bid/no-bid that names which unanswered question would change it. Use when someone says \"an RFQ came in,\" \"can we quote this,\" \"should we bid this job,\" \"read this inquiry,\" or \"what's missing from this RFQ?\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/customer-inquiry-intake",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/customer-inquiry-intake/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "customer inquiry intake"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-daily-production-report",
+      "name": "daily-production-report",
+      "kind": "skill",
+      "summary": "Produces the morning production report: output against plan by line, cell and product; OEE with availability, performance and quality shown separately; the downtime log ranked both by minutes and by frequency; scrap and downtime priced in dollars; week-over-week movers; and the exceptions needing a decision today. For each significant exception it drafts a specific reschedule or changeover move with its consequences traced, never a re-optimised day. Reads the consolidated dataset and leads with data freshness. When the plant has a floor plan on file, or attaches one, it also draws each machine's OEE, availability and downtime on a schematic of the floor. Use when someone says \"morning report,\" \"production report,\" \"how did we do yesterday,\" \"what's our OEE,\" \"downtime report,\" \"what's late,\" or \"what do I take into the production meeting.\"",
+      "description": "Produces the morning production report: output against plan by line, cell and product; OEE with availability, performance and quality shown separately; the downtime log ranked both by minutes and by frequency; scrap and downtime priced in dollars; week-over-week movers; and the exceptions needing a decision today. For each significant exception it drafts a specific reschedule or changeover move with its consequences traced, never a re-optimised day. Reads the consolidated dataset and leads with data freshness. When the plant has a floor plan on file, or attaches one, it also draws each machine's OEE, availability and downtime on a schematic of the floor. Use when someone says \"morning report,\" \"production report,\" \"how did we do yesterday,\" \"what's our OEE,\" \"downtime report,\" \"what's late,\" or \"what do I take into the production meeting.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/daily-production-report",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/daily-production-report/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "daily production report"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-data-consolidate",
+      "name": "data-consolidate",
+      "kind": "skill",
+      "summary": "Joins the plant's scheduled exports and connector data into one working dataset — ERP items (NetSuite or Infor M3), sales orders, production work orders, purchase orders, inventory, routings and closed-job operation actuals; CMMS assets and maintenance work orders; and the MES, historian, quality and planning files landing in the Microsoft 365 export folder. Keys on part number, production work order, sales order, lot, asset and supplier, classifies every key that fails to match into one of eight mismatch classes, and proposes the correction rather than reporting a count, applying nothing without a yes. Runs file-only with no connector, or connector-only with no files. Use when someone says \"pull the data together,\" \"consolidate the exports,\" \"build the dataset,\" \"join production to the ERP,\" or \"why don't these numbers match,\" and before any reporting or quoting skill runs.",
+      "description": "Joins the plant's scheduled exports and connector data into one working dataset — ERP items (NetSuite or Infor M3), sales orders, production work orders, purchase orders, inventory, routings and closed-job operation actuals; CMMS assets and maintenance work orders; and the MES, historian, quality and planning files landing in the Microsoft 365 export folder. Keys on part number, production work order, sales order, lot, asset and supplier, classifies every key that fails to match into one of eight mismatch classes, and proposes the correction rather than reporting a count, applying nothing without a yes. Runs file-only with no connector, or connector-only with no files. Use when someone says \"pull the data together,\" \"consolidate the exports,\" \"build the dataset,\" \"join production to the ERP,\" or \"why don't these numbers match,\" and before any reporting or quoting skill runs.",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/data-consolidate",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/data-consolidate/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "data consolidate"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-design-space-explore",
+      "name": "design-space-explore",
+      "kind": "skill",
+      "summary": "Generates a batch of CAD variants directly in Autodesk Fusion by applying changed parameters to an engineer's existing model, never designing from scratch and never overwriting the base. Checks first whether the parameters the engineer wants to vary actually drive the model's geometry, and stops rather than generating garbage if they don't. Confirms the variant count with the engineer before generating anything. Captures mass, volume, bounding box and every other model-computed property per variant, and hands the batch off in the shape trade-study-report consumes — it does not run analysis itself. Use when someone says \"explore the design space,\" \"generate variants,\" \"try different wall thicknesses,\" \"run a parameter sweep,\" or \"vary this and see what happens.\"",
+      "description": "Generates a batch of CAD variants directly in Autodesk Fusion by applying changed parameters to an engineer's existing model, never designing from scratch and never overwriting the base. Checks first whether the parameters the engineer wants to vary actually drive the model's geometry, and stops rather than generating garbage if they don't. Confirms the variant count with the engineer before generating anything. Captures mass, volume, bounding box and every other model-computed property per variant, and hands the batch off in the shape trade-study-report consumes — it does not run analysis itself. Use when someone says \"explore the design space,\" \"generate variants,\" \"try different wall thicknesses,\" \"run a parameter sweep,\" or \"vary this and see what happens.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/design-space-explore",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/design-space-explore/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "design space explore"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-inspection-to-capa",
+      "name": "inspection-to-capa",
+      "kind": "skill",
+      "summary": "Runs the quality chain end to end: writes the nonconformance against the requirement it violates, searches history at the moment of writing to say whether this has happened before and whether the last fix held, reads sensor and inspection data on one verified timeline, proposes ranked candidate causes with evidence for and against, drafts the 8D, and produces the customer pack behind a redaction diff. Use when someone says \"run the CAPA chain,\" \"take this nonconformance through to an 8D,\" \"inspection to CAPA,\" or asks for the full corrective-action workflow.",
+      "description": "Runs the quality chain end to end: writes the nonconformance against the requirement it violates, searches history at the moment of writing to say whether this has happened before and whether the last fix held, reads sensor and inspection data on one verified timeline, proposes ranked candidate causes with evidence for and against, drafts the 8D, and produces the customer pack behind a redaction diff. Use when someone says \"run the CAPA chain,\" \"take this nonconformance through to an 8D,\" \"inspection to CAPA,\" or asks for the full corrective-action workflow.",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/inspection-to-capa",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/inspection-to-capa/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "inspection to capa"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-morning-plant-pulse",
+      "name": "morning-plant-pulse",
+      "kind": "skill",
+      "summary": "Runs the overnight chain that has the morning production report waiting before anyone asks for it: joins last night's planning, production and maintenance exports, flags the mismatched keys, then computes output against plan, OEE with its three components, downtime ranked two ways, priced losses and the exceptions needing a decision. Stores a record per production day and keeps one Operations Command Center dashboard per site up to date, with a 14 and 30 day trend. Safe to run unattended. Use when someone says \"run the morning pulse,\" \"do the overnight report,\" \"morning plant pulse,\" \"update the operations dashboard,\" or schedules the daily production run.",
+      "description": "Runs the overnight chain that has the morning production report waiting before anyone asks for it: joins last night's planning, production and maintenance exports, flags the mismatched keys, then computes output against plan, OEE with its three components, downtime ranked two ways, priced losses and the exceptions needing a decision. Stores a record per production day and keeps one Operations Command Center dashboard per site up to date, with a 14 and 30 day trend. Safe to run unattended. Use when someone says \"run the morning pulse,\" \"do the overnight report,\" \"morning plant pulse,\" \"update the operations dashboard,\" or schedules the daily production run.",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/morning-plant-pulse",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/morning-plant-pulse/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "morning plant pulse"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-ncr-writeup",
+      "name": "ncr-writeup",
+      "kind": "skill",
+      "summary": "Writes the nonconformance report: what was found and measured, the specific requirement it violates cited to its document and locator, how many parts are actually suspect and why that scope rather than a narrower one, and where every one of them physically is across all five locations. Searches prior NCRs and CAPAs at the moment of writing and reports whether the earlier fix held. Where containment places parts at a customer, drafts the escape notification automatically against its contractual clock. Never asserts a requirement it cannot locate. Keeps the site's Quality Register of open NCRs up to date, and closes an NCR there when told to. Use when someone says \"write up this nonconformance,\" \"we found bad parts,\" \"raise an NCR,\" \"the inspector rejected this lot,\" \"a customer is complaining about a part,\" or \"close NCR-2026-0141.\"",
+      "description": "Writes the nonconformance report: what was found and measured, the specific requirement it violates cited to its document and locator, how many parts are actually suspect and why that scope rather than a narrower one, and where every one of them physically is across all five locations. Searches prior NCRs and CAPAs at the moment of writing and reports whether the earlier fix held. Where containment places parts at a customer, drafts the escape notification automatically against its contractual clock. Never asserts a requirement it cannot locate. Keeps the site's Quality Register of open NCRs up to date, and closes an NCR there when told to. Use when someone says \"write up this nonconformance,\" \"we found bad parts,\" \"raise an NCR,\" \"the inspector rejected this lot,\" \"a customer is complaining about a part,\" or \"close NCR-2026-0141.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/ncr-writeup",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/ncr-writeup/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "ncr writeup"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-onboarding",
+      "name": "onboarding",
+      "kind": "skill",
+      "summary": "Sets the plugin up for one plant on first run. Asks which ERP, CAD, CMMS and document system the plant uses and tests the four supported connectors (Microsoft 365, Oracle NetSuite, Infor M3, Autodesk Fusion), takes a bulk drop of the plant's own documents so it asks only what they don't answer, profiles the export folder, and runs the time interview with a clock-skew check. Also captures vocabulary, sites, capability, machining data, standards, templates and commercial rates, reports which skills are limited by anything missing, and ends with connector options for every other system named. Unknowns are deferred, never blocking. Use on a first session or when someone says \"set us up,\" \"get started,\" \"configure the plugin,\" \"which of our systems can you reach,\" \"which ERP can you reach,\" \"can you connect to our CMMS,\" \"here are our documents,\" \"our shifts changed,\" \"we added a plant,\" \"update our labour rate,\" \"change our margin,\" or \"reconfigure.\"",
+      "description": "Sets the plugin up for one plant on first run. Asks which ERP, CAD, CMMS and document system the plant uses and tests the four supported connectors (Microsoft 365, Oracle NetSuite, Infor M3, Autodesk Fusion), takes a bulk drop of the plant's own documents so it asks only what they don't answer, profiles the export folder, and runs the time interview with a clock-skew check. Also captures vocabulary, sites, capability, machining data, standards, templates and commercial rates, reports which skills are limited by anything missing, and ends with connector options for every other system named. Unknowns are deferred, never blocking. Use on a first session or when someone says \"set us up,\" \"get started,\" \"configure the plugin,\" \"which of our systems can you reach,\" \"which ERP can you reach,\" \"can you connect to our CMMS,\" \"here are our documents,\" \"our shifts changed,\" \"we added a plant,\" \"update our labour rate,\" \"change our margin,\" or \"reconfigure.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/onboarding",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/onboarding/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "onboarding"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-quote-build",
+      "name": "quote-build",
+      "kind": "skill",
+      "summary": "Produces the make-to-order quote from the intake form, comparable prior jobs and cost history, with every number traced to where it came from — material at the price actually paid on a named purchase order, machine hours per operation from a labelled ladder (current routing, closed-job actuals, the confirmed design, first principles) with setup and run kept apart, setup re-amortized at each quantity break, and margin on its own line. Checks the promised date against real shop load before committing to it. Revises in place when a customer counters, preserving what changed and why. Use when someone says \"build the quote,\" \"price this job,\" \"what should we charge,\" \"quote this RFQ,\" or \"the customer came back on price.\"",
+      "description": "Produces the make-to-order quote from the intake form, comparable prior jobs and cost history, with every number traced to where it came from — material at the price actually paid on a named purchase order, machine hours per operation from a labelled ladder (current routing, closed-job actuals, the confirmed design, first principles) with setup and run kept apart, setup re-amortized at each quantity break, and margin on its own line. Checks the promised date against real shop load before committing to it. Revises in place when a customer counters, preserving what changed and why. Use when someone says \"build the quote,\" \"price this job,\" \"what should we charge,\" \"quote this RFQ,\" or \"the customer came back on price.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/quote-build",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/quote-build/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "quote build"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-rfq-to-quote",
+      "name": "rfq-to-quote",
+      "kind": "skill",
+      "summary": "Runs the whole RFQ-to-quote chain end to end: reads the inquiry and its drawings, checks it against what the plant can build, drafts the questions back, returns a provisional bid/no-bid, pulls cost history, routings and closed-job actuals, builds an internal estimating model in Fusion where connected (from the drawing, a prior part's model saved as new, text specs as a ROM only, or a STEP file), derives machine hours per operation with each hour's basis labelled, and drafts the quote with its cost basis shown. Four approval gates, and the chain pauses for days while the customer answers. Use when someone says \"run the RFQ chain,\" \"take this RFQ all the way to a quote,\" \"quote this end to end,\" \"quote this from the drawing,\" or names an inquiry and asks for the full workflow.",
+      "description": "Runs the whole RFQ-to-quote chain end to end: reads the inquiry and its drawings, checks it against what the plant can build, drafts the questions back, returns a provisional bid/no-bid, pulls cost history, routings and closed-job actuals, builds an internal estimating model in Fusion where connected (from the drawing, a prior part's model saved as new, text specs as a ROM only, or a STEP file), derives machine hours per operation with each hour's basis labelled, and drafts the quote with its cost basis shown. Four approval gates, and the chain pauses for days while the customer answers. Use when someone says \"run the RFQ chain,\" \"take this RFQ all the way to a quote,\" \"quote this end to end,\" \"quote this from the drawing,\" or names an inquiry and asks for the full workflow.",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/rfq-to-quote",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/rfq-to-quote/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "rfq to quote"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-root-cause-capa",
+      "name": "root-cause-capa",
+      "kind": "skill",
+      "summary": "Reads sensor history, inspection measurements, maintenance records and prior tickets onto one verified timeline, runs the pattern checks in code rather than by eye — SPC drift, clustering by lot, shift, operator, machine and tool change, correlation with a maintenance event — then proposes ranked candidate causal chains, each with the evidence for it, the evidence against it, and the test that would confirm or kill it. Drafts the 8D. Where the leading candidate points at purchased material, raises the supplier-caused flag that starts a sourcing action. Use when someone says \"why did this happen,\" \"root cause,\" \"write the 8D,\" \"investigate this nonconformance,\" \"CAPA,\" or \"the customer wants a corrective action report.\"",
+      "description": "Reads sensor history, inspection measurements, maintenance records and prior tickets onto one verified timeline, runs the pattern checks in code rather than by eye — SPC drift, clustering by lot, shift, operator, machine and tool change, correlation with a maintenance event — then proposes ranked candidate causal chains, each with the evidence for it, the evidence against it, and the test that would confirm or kill it. Drafts the 8D. Where the leading candidate points at purchased material, raises the supplier-caused flag that starts a sourcing action. Use when someone says \"why did this happen,\" \"root cause,\" \"write the 8D,\" \"investigate this nonconformance,\" \"CAPA,\" or \"the customer wants a corrective action report.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/root-cause-capa",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/root-cause-capa/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "root cause capa"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-supplier-escape-to-alternate-source",
+      "name": "supplier-escape-to-alternate-source",
+      "kind": "skill",
+      "summary": "Runs the cross-area chain from a nonconformance traced to purchased material through to an alternate-source RFQ: writes the NCR and its containment, establishes root cause against the supplier rather than the process, records the corrective action, then builds the sourcing package with a response format that makes the returned bids comparable. Use when someone says \"run the supplier escape chain,\" \"a supplier caused this, find us an alternate,\" \"supplier escape to alternate source,\" or asks to source around a supplier who caused a defect.",
+      "description": "Runs the cross-area chain from a nonconformance traced to purchased material through to an alternate-source RFQ: writes the NCR and its containment, establishes root cause against the supplier rather than the process, records the corrective action, then builds the sourcing package with a response format that makes the returned bids comparable. Use when someone says \"run the supplier escape chain,\" \"a supplier caused this, find us an alternate,\" \"supplier escape to alternate source,\" or asks to source around a supplier who caused a defect.",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/supplier-escape-to-alternate-source",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/supplier-escape-to-alternate-source/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "supplier escape to alternate source"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-supplier-quote-request",
+      "name": "supplier-quote-request",
+      "kind": "skill",
+      "summary": "Builds the RFQ package that goes out to suppliers — drawing and specification at the verified current revision, the demand picture, the quality clause list, commercial terms, and a mandated response format that makes the returned bids comparable by construction. Lists everything missing. Hard stops on a revision mismatch or restricted technical data. Then runs the supplier loop: candidates from the approved supplier list with unapproved and single-source flagged, one email draft per supplier for the buyer to send, response tracking with chase drafts, returned bids read into one shape with every missing field listed, a comparison per quantity break computed in code, and a recommendation. The buyer decides; the skill records who and when. Use when someone says \"source this part,\" \"send an RFQ to suppliers,\" \"we need an alternate supplier,\" \"get quotes on this,\" \"who else can make this?\", \"chase the suppliers,\" \"compare these bids,\" or \"we're going with this supplier.\"",
+      "description": "Builds the RFQ package that goes out to suppliers — drawing and specification at the verified current revision, the demand picture, the quality clause list, commercial terms, and a mandated response format that makes the returned bids comparable by construction. Lists everything missing. Hard stops on a revision mismatch or restricted technical data. Then runs the supplier loop: candidates from the approved supplier list with unapproved and single-source flagged, one email draft per supplier for the buyer to send, response tracking with chase drafts, returned bids read into one shape with every missing field listed, a comparison per quantity break computed in code, and a recommendation. The buyer decides; the skill records who and when. Use when someone says \"source this part,\" \"send an RFQ to suppliers,\" \"we need an alternate supplier,\" \"get quotes on this,\" \"who else can make this?\", \"chase the suppliers,\" \"compare these bids,\" or \"we're going with this supplier.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/supplier-quote-request",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/supplier-quote-request/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "supplier quote request"
+      ],
+      "hotness": 47099.0,
+      "author": "anthropics",
+      "license": "Apache-2.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "skill-anthropics-trade-study-report",
+      "name": "trade-study-report",
+      "kind": "skill",
+      "summary": "Turns a filled-in trade study matrix and its analysis results into a scored comparison and a decision memo, with every score cited to its source. Runs the sensitivity analysis every time — where the winner flips, which criterion the decision actually rests on, whether an option never wins under any plausible weighting — because a recommendation with no sensitivity check is a spreadsheet, not a decision. Disqualifies options that violate a hard constraint rather than scoring them low. Consumes design-space-explore's variant manifest when one exists, or a matrix filled in by hand when it doesn't. Use when someone says \"compare these options,\" \"write the trade study,\" \"which design should we pick,\" \"score these against the requirements,\" or \"how sensitive is this decision to the weighting.\"",
+      "description": "Turns a filled-in trade study matrix and its analysis results into a scored comparison and a decision memo, with every score cited to its source. Runs the sensitivity analysis every time — where the winner flips, which criterion the decision actually rests on, whether an option never wins under any plausible weighting — because a recommendation with no sensitivity check is a spreadsheet, not a decision. Disqualifies options that violate a hard constraint rather than scoring them low. Consumes design-space-explore's variant manifest when one exists, or a matrix filled in by hand when it doesn't. Use when someone says \"compare these options,\" \"write the trade study,\" \"which design should we pick,\" \"score these against the requirements,\" or \"how sensitive is this decision to the weighting.\"",
+      "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-for-manufacturing/skills/trade-study-report",
+      "repo": "anthropics/claude-plugins-official",
+      "path": "plugins/claude-for-manufacturing/skills/trade-study-report/SKILL.md",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
+      "categories": [
+        "plugins",
+        "claude for manufacturing",
+        "skills",
+        "trade study report"
+      ],
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1000,15 +1374,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management/skills/claude-md-improver",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/claude-md-management/skills/claude-md-improver/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "claude md management",
         "skills",
         "claude md improver"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1022,14 +1396,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-security/skills/claude-security",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/claude-security/skills/claude-security/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "claude security",
         "skills"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1043,15 +1417,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/cwc-makers/skills/cardputer-buddy",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/cwc-makers/skills/cardputer-buddy/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "cwc makers",
         "skills",
         "cardputer buddy"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1065,15 +1439,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/cwc-makers/skills/m5-onboard",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/cwc-makers/skills/m5-onboard/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "cwc makers",
         "skills",
         "m5 onboard"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1087,15 +1461,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/example-plugin/skills/example-command",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/example-plugin/skills/example-command/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "example plugin",
         "skills",
         "example command"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1109,15 +1483,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/example-plugin/skills/example-skill",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/example-plugin/skills/example-skill/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "example plugin",
         "skills",
         "example skill"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1131,14 +1505,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design/skills/frontend-design",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/frontend-design/skills/frontend-design/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "frontend design",
         "skills"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1152,15 +1526,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/hookify/skills/writing-rules",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/hookify/skills/writing-rules/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "hookify",
         "skills",
         "writing rules"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1174,14 +1548,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-olympiad/skills/math-olympiad",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/math-olympiad/skills/math-olympiad/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "math olympiad",
         "skills"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1195,15 +1569,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-proof/skills/siege",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/math-proof/skills/siege/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "math proof",
         "skills",
         "siege"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1217,15 +1591,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-proof/skills/solo",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/math-proof/skills/solo/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "math proof",
         "skills",
         "solo"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1239,15 +1613,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev/skills/build-mcp-app",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/mcp-server-dev/skills/build-mcp-app/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "mcp server dev",
         "skills",
         "build mcp app"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1261,15 +1635,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev/skills/build-mcp-server",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/mcp-server-dev/skills/build-mcp-server/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "mcp server dev",
         "skills",
         "build mcp server"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1283,15 +1657,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev/skills/build-mcpb",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/mcp-server-dev/skills/build-mcpb/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "mcp server dev",
         "skills",
         "build mcpb"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1305,14 +1679,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/playground/skills/playground",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/playground/skills/playground/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "playground",
         "skills"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1326,15 +1700,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/agent-development",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/agent-development/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "agent development"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1348,15 +1722,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/command-development",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/command-development/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "command development"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.2.0"
@@ -1370,15 +1744,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/hook-development",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/hook-development/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "hook development"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1392,15 +1766,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/mcp-integration",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "mcp integration"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1414,15 +1788,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/plugin-settings",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/plugin-settings/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "plugin settings"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1436,15 +1810,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/plugin-structure",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/plugin-structure/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "plugin structure"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1458,15 +1832,15 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev/skills/skill-development",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/plugin-dev/skills/skill-development/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "plugin dev",
         "skills",
         "skill development"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "0.1.0"
@@ -1480,14 +1854,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/project-artifact/skills/project-artifact",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/project-artifact/skills/project-artifact/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "project artifact",
         "skills"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1501,14 +1875,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/receipts/skills/receipts",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/receipts/skills/receipts/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "receipts",
         "skills"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1522,14 +1896,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report/skills/session-report",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/session-report/skills/session-report/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "session report",
         "skills"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
@@ -1543,14 +1917,14 @@
       "sourceUrl": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator/skills/skill-creator",
       "repo": "anthropics/claude-plugins-official",
       "path": "plugins/skill-creator/skills/skill-creator/SKILL.md",
-      "stars": 46848,
-      "updatedAt": "2026-11-11T12:58:55Z",
+      "stars": 46999,
+      "updatedAt": "2026-11-12T14:08:27Z",
       "categories": [
         "plugins",
         "skill creator",
         "skills"
       ],
-      "hotness": 46948.0,
+      "hotness": 47099.0,
       "author": "anthropics",
       "license": "Apache-2.0",
       "version": "1.0.0"
